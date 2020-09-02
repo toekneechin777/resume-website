@@ -1,0 +1,16 @@
+.industry_container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.industry_container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-image: linear-gradient(to top right, #004c91, #007DB8);
+  height: 10vh;
+  position: relative;
+  padding-top: 2vh;
+  font-size: 4vh;
+}

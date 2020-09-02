@@ -11,3 +11,158 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*---------------------------------------------------
+  SECTION WRAPS
+---------------------------------------------------*/
+
+/* Header Wrap */
+.header {
+  background-image: linear-gradient(to top right, #004c91, #007DB8);
+  /*background-color: #004c91; */
+  padding-top:0.833vh;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 30vh;
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 7vh;
+  text-align: center;
+  color: white;
+}
+
+.social-container {
+  background: #eee;
+  padding: 25px 50px;
+  margin: auto;
+  width: 20%;
+  position: relative;
+  border-radius: 25px;
+  bottom: 1vh;
+  top: 1vh;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.linkedin {
+  color: #0072b1;
+}
+
+a.github {
+  color: #211F1F;
+}
+
+a.resume {
+  text-decoration: none;
+  color: black;
+  font-size: 2.65vh;
+}
+
+.navigation {
+  width: 100%;
+}
+
+/* Slideshow Wrap */
+
+.tech-slideshow {
+  height: 83vh;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.mover-1 {
+  height: 100%;
+  width: 5000vh;
+  background: url(background.png);
+  background-size: 700vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  animation: moveSlideshow 500s linear infinite;
+}
+
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
+
+.carousel {
+  width: 50%;
+  margin: 0 auto;
+  top: 5vh;
+}
+
+.recent-events {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.recent-events-title {
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 10vh;
+  font-size: x-large;
+  z-index: 2;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.recent-events img {
+  height: 70vh;
+}
+
+.carousel-caption {
+  background-color: black;
+  opacity: 0.5;
+}
+
+
+
+/*------------------------------ Footer--------------------------------------*/
+.footer {
+  background: #2f2f2f;
+  position: relative;
+  top: 0vh;
+  height: 10vh;
+  width: 100%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer h5 {
+  color: white;
+}
+
+.footer t {
+  font-weight: 700;
+}
