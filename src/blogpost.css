@@ -44,6 +44,7 @@
 }
 
 .blogpost_info {
+  vertical-align: middle;
   background-color: #D3D3D3;
   width: 74.5%;
   height: 100%;

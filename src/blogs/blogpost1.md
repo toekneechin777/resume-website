@@ -1,7 +1,11 @@
 ## Why do a blog?
 ---
-![](./blogs/blogpost1.png)
+![](https://resume-website-pics.s3.amazonaws.com/blogpost1.png)
 ---
+
+&nbsp;
+
+
 A blog is useful for many reasons. It can help me, as a developer, learn much faster. A person can never fully understand a topic until they are able to explain it. It is also an opportunity for me to broaden my technology stack horizons and try new things. It is a medium to help share my ideas, my perspectives, and myself.
 
 ---

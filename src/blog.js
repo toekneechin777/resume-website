@@ -8,7 +8,7 @@ import bp1img from "./blogs/blogpost1.png";
 
 import bp2 from "./blogs/blogpost2.md";
 
-import {BrowserRouter as Router,
+import {StaticRouter as Router,
   Switch,
   Route} from "react-router-dom";
 

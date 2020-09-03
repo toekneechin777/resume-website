@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  StaticRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -34,7 +34,7 @@ export default function Content() {
             <Route exact path="/">
               <SlideShow/>
             </Route>
-            <Route path="/aboutme">
+            <Route exact path="/aboutme">
               <About/>
             </Route>
             <Route path="/education">
