@@ -3,17 +3,8 @@ import ExperienceBox from "./experience.js"
 import "./work.css"
 
 import keller from "./experience/umn/keller.jpg"
-import umnta_leftinfo from "./experience/umn/umnta_leftinfo.md"
-import umnta_rightinfo from "./experience/umn/umnta_rightinfo.md"
-
 import optum1 from "./experience/optum/optum_place.jpg"
-import optum1_leftinfo from "./experience/optum/optum1_leftinfo.md"
-import optum1_rightinfo from "./experience/optum/optum1_rightinfo.md"
-
 import optum2 from "./experience/optum/optum_place2.jpg"
-import optum2_leftinfo from "./experience/optum/optum2_leftinfo.md"
-import optum2_rightinfo from "./experience/optum/optum2_rightinfo.md"
-
 import sift from "./sift.jpg"
 import amazon from "./amazon_place.jpg"
 
@@ -26,20 +17,26 @@ export default function Work() {
   return (
     <div className="work_container">
       <h1> <b> Work Experience </b> </h1>
-      <ExperienceBox title={amazontitle} image={amazon}/>
-      <ExperienceBox title={sifttitle} image={sift}/>
+      <ExperienceBox title={amazontitle}
+                      image={amazon}
+                      left_info={'https://resume-website-mds.s3.amazonaws.com/amazon/amazon_leftinfo.md'}
+                      right_info={'https://resume-website-mds.s3.amazonaws.com/amazon/amazon_rightinfo.md'}/>
+      <ExperienceBox title={sifttitle}
+                      image={sift}
+                      left_info={'https://resume-website-mds.s3.amazonaws.com/sift/sift_leftinfo.md'}
+                      right_info={'https://resume-website-mds.s3.amazonaws.com/sift/sift_rightinfo.md'}/>
       <ExperienceBox title={optum2title}
                       image={optum2}
-                      left_info={optum2_leftinfo}
-                      right_info={optum2_rightinfo}/>
+                      left_info={'https://resume-website-mds.s3.amazonaws.com/experience/optum/optum2_leftinfo.md'}
+                      right_info={'https://resume-website-mds.s3.amazonaws.com/experience/optum/optum2_rightinfo.md'}/>
       <ExperienceBox title={umntatitle}
                       image={keller}
-                      left_info={umnta_leftinfo}
-                      right_info={umnta_rightinfo}/>
+                      left_info={'https://resume-website-mds.s3.amazonaws.com/experience/umn/umnta_leftinfo.md'}
+                      right_info={'https://resume-website-mds.s3.amazonaws.com/experience/umn/umnta_rightinfo.md'}/>
       <ExperienceBox title={optum1title}
                       image={optum1}
-                      left_info={optum1_leftinfo}
-                      right_info={optum1_rightinfo}/>
+                      left_info={'https://resume-website-mds.s3.amazonaws.com/experience/optum/optum1_leftinfo.md'}
+                      right_info={'https://resume-website-mds.s3.amazonaws.com/experience/optum/optum1_rightinfo.md'}/>
     </div>
   )
 }

@@ -16,9 +16,9 @@ export default function Industry() {
   return (
     <div className="industry_container">
       <h1><b>Industry Projects</b></h1>
-      <Project image={margaret} info = {margaret_info}/>
-      <Project image={tybalt} info={tybalt_info}/>
-      <Project image={optum_gdb} info={optum_gdbinfo}/>
+      <Project image={margaret} info = {'https://resume-website-mds.s3.amazonaws.com/projects/margaret/margaret_info.md'}/>
+      <Project image={tybalt} info={'https://resume-website-mds.s3.amazonaws.com/projects/industry/tybalt_info.md'}/>
+      <Project image={optum_gdb} info={'https://resume-website-mds.s3.amazonaws.com/projects/industry/optum_graphdb_info.md'}/>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  StaticRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -27,14 +27,12 @@ export default function Content() {
           <SocialFollow/>
     		</div>
       </div>
-      <NavBar/>
       <Router>
+        <NavBar/>
         <div>
           <Switch>
-            <Route exact path="/">
-              <SlideShow/>
-            </Route>
-            <Route exact path="/aboutme">
+            <Route exact path="/" component={SlideShow}/>
+            <Route path="/aboutme">
               <About/>
             </Route>
             <Route path="/education">
